@@ -13,8 +13,10 @@ include '../includes/opendb.php';
 <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
 </head>
 <body>
-
-<div class="wrapper" style="height:1000px">
+<div>
+	<?php include '../includes/header.php'; ?>
+</div>
+<div class="wrapper" style="height:1000px, width:80%">
 <div class="container">
 	<form action="webServer.php" method="post">
 		URL: <input type="text" name="url" style="width:380px;">
@@ -67,11 +69,11 @@ include '../includes/opendb.php';
 	?>
 	</br></br></br>
 	<h2><?php echo $rowcount ?></h2>
-	<table summary="Summary Here" cellpadding="0" cellspacing="0">
+	<table summary="Summary Here" cellpadding="0" cellspacing="0" >
         <thead>
           <tr>
             <th style="width:5%;">Number</th>
-            <th style="width:60%;">URL</th>
+            <th style="width:600px;">URL</th>
             <th>Name</th>
             <th>Category</th>
           </tr>
@@ -101,6 +103,9 @@ include '../includes/opendb.php';
       </table>
 	</div>
    </div>	
+</div>
+<div>
+	<?php include '../includes/footer.php'; ?>
 </div>
 </body>
 </html>
